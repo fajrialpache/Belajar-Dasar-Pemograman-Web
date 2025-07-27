@@ -1,11 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   padding: 0;
   margin: 0;
 }
 
-main{
+main {
   padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+
+  padding-left: 20px;
 }
 
 h2,
@@ -21,12 +38,19 @@ h3 {
   color: white;
 }
 
-nav{
-  background-color:#00a2c6;
-  padding: 5px;
+header{
+  display: inline;
 }
 
-nav li{
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+}
+
+nav li {
   list-style-type: none;
   display: inline;
   margin-right: 20px;
@@ -58,7 +82,7 @@ nav a:hover {
   width: 200px;
 }
 
-.card{
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
@@ -73,8 +97,14 @@ footer {
   font-weight: bold;
 }
 
+@media screen and (max-width:1000px){
+  #content, aside{
+    width: 100%;
+    padding: 0;
+  }
+}
 
-/* Coba-Coba */
+/* Coba-Coba
 .container {
   width: 800px;
   border: 4px solid black;
@@ -84,7 +114,4 @@ footer {
 img {
   float: left;
   margin: 10px;
-}
-
-
-
+} */
