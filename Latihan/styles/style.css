@@ -10,19 +10,21 @@ body {
 
 main {
   padding: 20px;
-  overflow: auto;
+
+  display: flex;
+  gap: 1.5rem;
 }
 
 #content {
-  float: left;
-  width: 75%;
+  display: flex;
+  flex: 5;
+
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
 }
 
 aside {
-  float: right;
-  width: 25%;
-
-  padding-left: 20px;
+flex: 1;
 }
 
 h2,
@@ -50,10 +52,15 @@ nav {
   top: 0;
 }
 
+nav ul{
+display: flex;
+
+padding-inline: 4rem;
+gap: 2rem;
+}
+
 nav li {
   list-style-type: none;
-  display: inline;
-  margin-right: 20px;
 }
 
 nav a {
@@ -79,14 +86,13 @@ nav a:hover {
 }
 
 .profil img {
-  width: 200px;
+  max-width: 200px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
-  margin-top: 20px;
 }
 
 footer {
@@ -97,46 +103,41 @@ footer {
   font-weight: bold;
 }
 
-@media screen and (max-width:1000px){
-  #content, aside{
-    width: 100%;
-    padding: 0;
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
   }
 }
 
-/* Coba-Coba
-.container {
-  width: 800px;
-  border: 4px solid black;
-  overflow: auto;
-}
-
-img {
-  float: left;
-  margin: 10px;
-} */
-
-.box {
-  width: 100px;
-  height: 100px;
-}
-
-.box:nth-child(odd) {
-  background-color: salmon;
-}
-
-.box:nth-child(even) {
-  background-color: lime;
-}
-
-.flex {
+/* Coba-Coba */ 
+/* [class^=shrink] {
   display: flex;
-  
-  flex-wrap: wrap;
-  
-  /* Silakan coba seluruh nilainya */
-  /* gap: 16px; */
-  /* gap: 16px 24px; */
-  /*row-gap: 16px;*/
-  /* column-gap: 24px; */
 }
+
+.shrink-1 .box {
+  background-color: salmon;
+
+  flex-shrink: 1;
+}
+
+.shrink-0 .box {
+  background-color: lime;
+
+  flex-shrink: 0;
+} */
