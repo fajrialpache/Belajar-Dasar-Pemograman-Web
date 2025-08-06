@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Quicksand", sans-serif;
+
+  height: 100vh;
+  margin: 0;
+}
+
+header.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+
+  padding-block: 1rem;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  display: flex;
+  padding-left: 0;
+
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-radius: 999px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #425c77;
+  color: white;
+}
+
+main {
+  flex: 1;
+
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 4rem;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+main.content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+main.content.content-description {
+  flex: 1 1;
+}
+
+main.content.content-description.title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+main.content.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
