@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
             <img src="asset/2.png" alt="logo">
+            <p>Muhamad Al Fajri</p>
         </div>
         <nav>
             <ul>
@@ -29,8 +31,8 @@
                 <p>Welcome to my Portofolio</p>
                 <h1>Hi i'm Robert Junior Product Designer</h1>
                 <p>Collaborating with highly skilled individualis, our agency delivers top-quality services</p>
-                <button>Hire Me!</button>
-                <button>Download CV</button>
+                <button class="button-hireMe">Hire Me!</button>
+                <button class="button-download">Download CV</button>
             </div>
             <aside>
                 <img src="asset/img/IMG_20220904_183545.jpg" alt="foto profile">
@@ -79,34 +81,55 @@
             </div>
         </div>
         <div class="services">
-            <p>services</p>
+            <p class="subtitle">Services</p>
+            <h1>Exploring My Design Skills</h1>
+            <p class="description">
+                We transform your ideas into a distinctive web project that both inspires you and captivates your
+                customers.
+            </p>
 
-            <head>
-                <h1>Exploring My Design Skills</h1>
-            </head>
-            <div class="cards">
-                <div class="card">
-                    <h3>Website / App Design UI/UX Design</h3>
-                    <p>Creating Engaging Degital Experience for Website and Apps through UI/UX Design</p>
-                    <a href="#">Learn more</a>
+            <div class="slider-container">
+                <button class="arrow left">←</button>
+
+                <div class="cards-wrapper">
+                    <div class="cards">
+                        <div class="card active">
+                            <div class="icon">🧩</div>
+                            <h3>Website / App Design<br>UX / UI Design</h3>
+                            <p>Creating Engaging Digital Experiences for Websites and Apps through UX/UI Design</p>
+                            <a href="#">Learn more →</a>
+                        </div>
+                        <div class="card">
+                            <div class="icon">📈</div>
+                            <h3>Strategic Marketing<br>and Creative Content</h3>
+                            <p>Elevating Brands and Engagement through Strategic Marketing and Creative Content</p>
+                            <a href="#">Learn more →</a>
+                        </div>
+                        <div class="card">
+                            <div class="icon">🛒</div>
+                            <h3>Multivendor eCommerce<br>Website Solutions</h3>
+                            <p>Unlocking the World of Multivendor eCommerce Websites</p>
+                            <a href="#">Learn more →</a>
+                        </div>
+                        <div class="card">
+                            <div class="icon">💡</div>
+                            <h3>Creative Design<br>and Innovation</h3>
+                            <p>Delivering stunning visuals and designs that inspire and connect with your audience</p>
+                            <a href="#">Learn more →</a>
+                        </div>
+                        <div class="card">
+                            <div class="icon">🎨</div>
+                            <h3>Brand Identity<br>and Strategy</h3>
+                            <p>Helping you build a strong brand through effective identity and strategy</p>
+                            <a href="#">Learn more →</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Website / App Design UI/UX Design</h3>
-                    <p>Creating Engaging Degital Experience for Website and Apps through UI/UX Design</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="card">
-                    <h3>Website / App Design UI/UX Design</h3>
-                    <p>Creating Engaging Degital Experience for Website and Apps through UI/UX Design</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="card">
-                    <h3>Website / App Design UI/UX Design</h3>
-                    <p>Creating Engaging Degital Experience for Website and Apps through UI/UX Design</p>
-                    <a href="#">Learn more</a>
-                </div>
+
+                <button class="arrow right">→</button>
             </div>
         </div>
+
         <div class="blog">
             <div class="milestones">
                 <p>our milestones</p>
@@ -133,74 +156,67 @@
             <div class="project">
                 <p>our projects</p>
                 <h1>Presenting My Design Portfolio and Case Studies</h1>
+
                 <div class="nav">
-                    <button>All</button>
+                    <button class="active">All</button>
                     <button>UI/UX Design</button>
                     <button>Branding Design</button>
                     <button>Wordpress</button>
                 </div>
-                <a href="#"><img src="asset/2.png" alt=""></a>
-                <a href="#"><img src="asset/2.png" alt=""></a>
-                <a href="#"><img src="asset/2.png" alt=""></a>
-                <a href="#"><img src="asset/2.png" alt=""></a>
-                <a href="#"><img src="asset/2.png" alt=""></a>
-                <a href="#"><img src="asset/2.png" alt=""></a>
+
+                <div class="gallery">
+                    <a href="#"><img src="asset/2.png" alt=""></a>
+                    <a href="#"><img src="asset/2.png" alt=""></a>
+                    <a href="#"><img src="asset/2.png" alt=""></a>
+                    <a href="#"><img src="asset/2.png" alt=""></a>
+                    <a href="#"><img src="asset/2.png" alt=""></a>
+                    <a href="#"><img src="asset/2.png" alt=""></a>
+                </div>
             </div>
+
             <div class="testimoni">
-                <p>testimonials</p>
+                <p>TESTIMONIALS</p>
                 <h1>The Trust From Clients</h1>
+
                 <div class="pagenation">
-                    <button>icon</button>
-                    <button>icon</button>
+                    <button class="prev">←</button>
+                    <button class="next">→</button>
                 </div>
+
                 <div class="cards">
+
                     <div class="card">
-                        <img src="asset/2.png" alt="">
-                        <p>icon</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem assumenda magnam repellat
-                            in fugiat inventore ad et veritatis natus? Nulla placeat culpa deleniti nihil voluptates
-                            impedit itaque commodi sint beatae soluta?</p>
-                        <h6>Savannah nguyen</h6>
-                        <p>president of sales</p>
+                        <img src="asset/2.png" alt="client">
+                        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet tellus eget egestas. Enim
+                            ultrices dictum
+                            tortor in eget neque vestibulum.</p>
+                        <h6>SAVANNAH NGUYEN</h6>
+                        <span>President of Sales</span>
                     </div>
-                    <div class="card">
-                        <img src="asset/2.png" alt="">
-                        <p>icon</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem assumenda magnam repellat
-                            in fugiat inventore ad et veritatis natus? Nulla placeat culpa deleniti nihil voluptates
-                            impedit itaque commodi sint beatae soluta?</p>
-                        <h6>Savannah nguyen</h6>
-                        <p>president of sales</p>
+
+                    <div class="card active">
+                        <img src="asset/2.png" alt="client">
+                        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Tortor odio purus morbi amet. Donec bibendum et
+                            cursus felis
+                            sollicitudin vulputate cursus.</p>
+                        <h6>JENNY WILSON</h6>
+                        <span>Medical Assistant</span>
                     </div>
+
                     <div class="card">
-                        <img src="asset/2.png" alt="">
-                        <p>icon</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem assumenda magnam repellat
-                            in fugiat inventore ad et veritatis natus? Nulla placeat culpa deleniti nihil voluptates
-                            impedit itaque commodi sint beatae soluta?</p>
-                        <h6>Savannah nguyen</h6>
-                        <p>president of sales</p>
-                    </div>
-                    <div class="card">
-                        <img src="asset/2.png" alt="">
-                        <p>icon</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem assumenda magnam repellat
-                            in fugiat inventore ad et veritatis natus? Nulla placeat culpa deleniti nihil voluptates
-                            impedit itaque commodi sint beatae soluta?</p>
-                        <h6>Savannah nguyen</h6>
-                        <p>president of sales</p>
-                    </div>
-                    <div class="card">
-                        <img src="asset/2.png" alt="">
-                        <p>icon</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam rem assumenda magnam repellat
-                            in fugiat inventore ad et veritatis natus? Nulla placeat culpa deleniti nihil voluptates
-                            impedit itaque commodi sint beatae soluta?</p>
-                        <h6>Savannah nguyen</h6>
-                        <p>president of sales</p>
+                        <img src="asset/2.png" alt="client">
+                        <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Eu velit tellus pellentesque tincidunt arcu convallis
+                            bibendum.
+                        </p>
+                        <h6>CAMERON WILLIAMSON</h6>
+                        <span>Marketing Coordinator</span>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="contact">
             <section class="contact-section">
@@ -229,6 +245,7 @@
                             </div>
                             <input type="text" name="subject" placeholder="How can we help you?">
                             <textarea name="message" placeholder="How can we help you?" rows="5"></textarea>
+
                             <div class="form-agree">
                                 <input type="checkbox" id="agree" required>
                                 <label for="agree">By submitting, I’m agreed to the
@@ -243,18 +260,62 @@
         </div>
     </main>
     <footer>
-        <img src="asset/2.png" alt="">
-        <p>&#169; 2023. All Rights Reserved.</p>
-        <div class="social-media">
-            <p>follow us:</p>
-            <ul>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            </ul>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="asset/2.png" alt="AeroVision logo" class="footer-logo">
+                <p>© Copyright 2023. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <p>FOLLOW US:</p>
+                <ul>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                    </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                        <path
+                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                    </svg></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
+
+<script>
+    const cards = document.querySelector('.cards');
+    const btnLeft = document.querySelector('.arrow.left');
+    const btnRight = document.querySelector('.arrow.right');
+
+    let currentPosition = 0;
+    const cardWidth = 280;
+
+    btnRight.addEventListener('click', () => {
+        currentPosition -= cardWidth;
+        const maxScroll = -(cards.scrollWidth - document.querySelector('.cards-wrapper').offsetWidth);
+        if (currentPosition < maxScroll) currentPosition = maxScroll;
+        cards.style.transform = `translateX(${currentPosition}px)`;
+    });
+
+    btnLeft.addEventListener('click', () => {
+        currentPosition += cardWidth;
+        if (currentPosition > 0) currentPosition = 0;
+        cards.style.transform = `translateX(${currentPosition}px)`;
+    });
+</script>
 
 </html>

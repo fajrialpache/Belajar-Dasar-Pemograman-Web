@@ -1,0 +1,729 @@
+:root {
+  --blue: #0077ff;
+  --font: #222222;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header .logo img {
+  height: 50px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+header button {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+header button:hover {
+  background-color: white;
+  color: #007bff;
+  transition: all 0.3s ease;
+  border-color: #007bff;
+}
+
+/* Main */
+main {
+  /* padding: 20px; */
+  margin-top: 80px;
+}
+
+/* Home Section */
+.home {
+  padding: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.home .home-introductio {
+  flex: 2;
+  align-content: center;
+}
+
+.home aside {
+  flex: 1;
+}
+
+.home aside img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.button-hireMe {
+  border-radius: 50px;
+  background-color: var(--blue);
+  border: 2px solid transparent;
+  color: white;
+  padding: 13px 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-hireMe:hover {
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s ease;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.button-download {
+  margin-left: 1.5rem;
+  border-radius: 50px;
+  background-color: white;
+  border-color: var(--blue);
+  color: var(--blue);
+  padding: 13px 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-download:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  transition: all 0.3s ease;
+  color: white;
+  border: transparent;
+}
+
+/* Media Section */
+.media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  padding: 30px 0 30px 0;
+  width: 100%;
+}
+
+.media img {
+  height: 40px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 50px;
+}
+
+.about aside {
+  flex: 1;
+}
+
+.about aside img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about .about-me {
+  flex: 2;
+}
+
+.about .about-me button {
+  border-radius: 50px;
+  background-color: var(--blue);
+  border: 2px solid transparent;
+  color: white;
+  padding: 13px 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill .bar {
+  background-color: #ddd;
+  height: 20px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.skill .bar .fill {
+  background-color: #007bff;
+  height: 100%;
+  width: 70%; /* Example fill */
+  border-radius: 20px;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.subtitle {
+  color: #007bff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.services h1 {
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* === SLIDER AREA === */
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-wrapper {
+  overflow: hidden;
+  width: 80%;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
+
+.card {
+  flex: 0 0 260px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card:hover {
+  border-color: #007bff;
+  transform: translateY(-5px);
+}
+
+.card.active {
+  background-color: #007bff;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.card.active a,
+.card.active .icon {
+  color: white;
+}
+
+/* === NAVIGATION ARROWS === */
+.arrow {
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: #0056b3;
+}
+
+/* Blog Section */
+.blog {
+  margin-top: 80px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog .milestones {
+  background-color: #007bff;
+  color: white;
+  padding: 60px 20px;
+
+}
+
+.blog .milestones p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #cce0ff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.blog .milestones h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.blog .milestones .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog .milestones .card {
+  background: white;
+  color: #111;
+  border-radius: 10px;
+  padding: 25px 20px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.blog .milestones .card p {
+  color: #111;
+  text-transform: capitalize;
+}
+
+.blog .milestones .card:hover {
+  transform: translateY(-5px);
+}
+
+.blog .project {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.blog .project p {
+  text-transform: uppercase;
+  color: #007bff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog .project h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.blog .project .nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.blog .project .nav button {
+  background: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog .project .nav button:hover,
+.blog .project .nav button.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Grid gambar project */
+.blog .project .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.blog .project .gallery img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog .project .gallery img:hover {
+  transform: scale(1.03);
+}
+
+.testimoni {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimoni > p {
+  text-transform: uppercase;
+  color: #007bff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.testimoni h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Navigasi panah */
+.testimoni .pagenation {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.testimoni .pagenation button {
+  background: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimoni .pagenation button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Container cards */
+.testimoni .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+
+}
+
+.testimoni .cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card Style */
+.testimoni .card {
+  flex: 0 0 280px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.testimoni .card.active {
+  background: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+}
+
+.testimoni .card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimoni .card .stars {
+  color: #ffb400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimoni .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.testimoni .card.active p {
+  color: #e6e6e6;
+}
+
+.testimoni .card h6 {
+  font-weight: 700;
+  margin-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.testimoni .card span {
+  font-size: 13px;
+  color: #888;
+}
+
+.testimoni .card.active span {
+  color: #cce0ff;
+}
+
+.testimoni .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #007bff;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-header p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Contact Info Box */
+.contact-info {
+  background: white;
+  color: #333;
+  border-radius: 15px;
+  padding: 25px 30px;
+  text-align: left;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info strong {
+  color: #000;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form .form-row > input {
+  flex: 1 1 0;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button {
+  background-color: #002c8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #001f66;
+}
+
+.form-agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.form-agree a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 25px 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ⬅️ Biar semua elemen di tengah secara vertikal */
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo */
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+}
+
+/* Hapus margin default dari <p> */
+.footer-left p,
+.footer-right p {
+  margin: 0;
+}
+
+/* Follow Us */
+.footer-right p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Social icons */
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-right ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-right ul li a:hover {
+  color: #d1d1d1;
+}
