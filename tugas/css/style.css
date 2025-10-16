@@ -168,13 +168,14 @@ main {
 /* About Section */
 .about {
   display: flex;
+  align-items: center;
   gap: 20px;
-  margin-top: 40px;
   padding: 50px 100px;
 }
 
 .about aside {
   flex: 1;
+  margin-right: 80px;
 }
 
 .about aside img {
@@ -191,7 +192,7 @@ main {
   background-color: var(--blue);
   border: 2px solid transparent;
   color: white;
-  padding: 13px 40px;
+  padding: 10px 30px;
   font-size: 16px;
   font-weight: bold;
 }
@@ -202,15 +203,28 @@ main {
 
 .skill .bar {
   background-color: #ddd;
-  height: 20px;
+  height: 15px;
   width: 100%;
   border-radius: 20px;
 }
 
-.skill .bar .fill {
+.skill .bar .fill-1 {
   background-color: #007bff;
   height: 100%;
-  width: 70%; /* Example fill */
+  width: 50%;
+  border-radius: 20px;
+}
+
+.skill .bar .fill-2 {
+  background-color: #007bff;
+  height: 100%;
+  width: 85%;
+  border-radius: 20px;
+}
+.skill .bar .fill-3 {
+  background-color: #007bff;
+  height: 100%;
+  width: 70%;
   border-radius: 20px;
 }
 
@@ -314,7 +328,6 @@ main {
   color: white;
 }
 
-/* === NAVIGATION ARROWS === */
 .arrow {
   background: #007bff;
   color: white;
@@ -428,7 +441,6 @@ main {
   color: white;
 }
 
-/* Grid gambar project */
 .blog .project .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -611,6 +623,7 @@ main {
   flex: 1;
   min-width: 280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  line-height: 1rem;
 }
 
 .contact-info strong {
@@ -695,7 +708,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ⬅️ Biar semua elemen di tengah secara vertikal */
+  align-items: center;
 }
 
 .footer-left,
@@ -714,7 +727,6 @@ footer {
   border-radius: 50%;
 }
 
-/* Hapus margin default dari <p> */
 .footer-left p,
 .footer-right p {
   margin: 0;
