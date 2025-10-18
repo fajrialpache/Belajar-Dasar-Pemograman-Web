@@ -348,7 +348,7 @@ main {
   background: #0056b3;
 }
 
-/* Blog Section */
+/* Achievment Section */
 .blog {
   margin-top: 80px;
   text-align: center;
@@ -374,31 +374,79 @@ main {
   margin-bottom: 40px;
 }
 
-.blog .milestones .cards {
+.article-section {
+  max-width: 900px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.article.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+.article-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  /* border: 3px solid #002c8c; */
+}
+
+.article-content {
+  flex: 1;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.article-content h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.article-content p {
+  font-size: 16px;
+  text-transform: none !important;
+}
+
+/* Tombol navigasi */
+.controls {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.blog .milestones .card {
-  background: white;
-  color: #111;
-  border-radius: 10px;
-  padding: 25px 20px;
-  width: 200px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  text-align: center;
+.controls button {
+  background-color: #002c8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
 }
 
-.blog .milestones .card p {
-  color: #111;
-  text-transform: capitalize;
-}
-
-.blog .milestones .card:hover {
-  transform: translateY(-5px);
+.controls button:hover {
+  background-color: #001f66;
 }
 
 .blog .project {

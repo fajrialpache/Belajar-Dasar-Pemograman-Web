@@ -147,30 +147,60 @@
             </div>
         </div>
 
-        <!-- Data dummy -->
         <div class="blog" id="blog">
-            <div class="milestones">
-                <p>our milestones</p>
-                <h1>What sets our studio apart for your projects?</h1>
-                <div class="cards">
-                    <div class="card">
-                        <h1>8300+</h1>
-                        <p>Figma ipsum componen variant main layer. Hand.</p>
-                    </div>
-                    <div class="card">
-                        <h1>8300+</h1>
-                        <p>Figma ipsum componen variant main layer. Hand.</p>
-                    </div>
-                    <div class="card">
-                        <h1>8300+</h1>
-                        <p>Figma ipsum componen variant main layer. Hand.</p>
-                    </div>
-                    <div class="card">
-                        <h1>8300+</h1>
-                        <p>Figma ipsum componen variant main layer. Hand.</p>
-                    </div>
+            <article>
+                <div class="milestones">
+                    <p>My Achievments</p>
+                    <h1>What did you get from your college experience?</h1>
+                    <section class="article-section">
+                        <div class="article active">
+                            <img src="asset/img/IMG_20220904_183545.jpg" alt="Leadership" class="article-img">
+                            <div class="article-content">
+                                <h2>Leadership Experience</h2>
+                                <p>I have gained various leadership experiences throughout my journey, including serving
+                                    as an event chairperson, project
+                                    leader, master of ceremonies (MC), class representative, and president of a student
+                                    organization. These roles have
+                                    strengthened my ability to lead teams, manage responsibilities, communicate
+                                    effectively, and create a positive
+                                    collaborative environment.</p>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <img src="asset/img/asdos.jpg" alt="Teaching Assistant" class="article-img">
+                            <div class="article-content">
+                                <h2>Teaching Assistant</h2>
+                                <p>I served as a Teaching Assistant for several courses over three semesters.
+                                    In this role, I was responsible for facilitating lab sessions, guiding discussions,
+                                    assisting with assignment
+                                    assessments, and developing lab modules to support students’ learning process.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="article">
+                            <img src="asset/img/organisasi.jpg" alt="Organization President" class="article-img">
+                            <div class="article-content">
+                                <h2>Organization President</h2>
+                                <p>I had the valuable opportunity to serve as the first President of the Informatics
+                                    Engineering Student Association (HMTI)
+                                    at Sekolah Tinggi Teknologi Terpadu Nurul Fikri (STT-NF).
+                                    Being the first president meant starting everything from the ground up —
+                                    establishing the organizational structure,
+                                    designing work programs, and fostering a culture of collaboration among Informatics
+                                    Engineering students.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tombol navigasi -->
+                        <div class="controls">
+                            <button id="prev">❮ Prev</button>
+                            <button id="next">Next ❯</button>
+                        </div>
+                    </section>
                 </div>
-            </div>
+            </article>
             <div class="project">
                 <p>our projects</p>
                 <h1>Presenting My Design Portfolio and Case Studies</h1>
@@ -339,5 +369,50 @@
         cards.style.transform = `translateX(${currentPosition}px)`;
     });
 </script>
+
+<script>const articles = document.querySelectorAll('.article');
+    const nextBtn = document.getElementById('next');
+    const prevBtn = document.getElementById('prev');
+
+    let current = 0;
+    let interval;
+
+    // Fungsi untuk menampilkan artikel berikutnya
+    function showNext() {
+        articles[current].classList.remove('active');
+        current = (current + 1) % articles.length;
+        articles[current].classList.add('active');
+    }
+
+    // Fungsi untuk menampilkan artikel sebelumnya
+    function showPrev() {
+        articles[current].classList.remove('active');
+        current = (current - 1 + articles.length) % articles.length;
+        articles[current].classList.add('active');
+    }
+
+    // Interval otomatis
+    function startAutoSlide() {
+        interval = setInterval(showNext, 5000);
+    }
+
+    // Reset interval saat tombol ditekan
+    function resetInterval() {
+        clearInterval(interval);
+        startAutoSlide();
+    }
+
+    nextBtn.addEventListener('click', () => {
+        showNext();
+        resetInterval();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        showPrev();
+        resetInterval();
+    });
+
+    // Mulai auto slide
+    startAutoSlide();</script>
 
 </html>
